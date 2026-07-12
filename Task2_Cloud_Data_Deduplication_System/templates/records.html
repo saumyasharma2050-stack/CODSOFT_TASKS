@@ -1,0 +1,104 @@
+{% extends "base.html" %}
+
+{% block title %}
+Stored Records
+{% endblock %}
+
+{% block content %}
+
+<div class="container">
+
+    <h1>Stored Records</h1>
+
+    <hr>
+
+    <form method="GET">
+
+        <input
+            type="text"
+            name="search"
+            placeholder="Search by Name or Email"
+            value="{{ search }}">
+
+        <button type="submit">Search</button>
+
+    </form>
+
+    <br>
+
+    <table>
+
+        <thead>
+
+            <tr>
+
+                <th>ID</th>
+
+                <th>Name</th>
+
+                <th>Email</th>
+
+                <th>Action</th>
+
+            </tr>
+
+        </thead>
+
+        <tbody>
+
+            {% if records %}
+
+                {% for record in records %}
+
+                <tr>
+
+                    <td>{{ record.id }}</td>
+
+                    <td>{{ record.name }}</td>
+
+                    <td>{{ record.email }}</td>
+
+                    <td>
+
+                        <a href="/delete/{{ record.id }}"
+                           onclick="return confirm('Are you sure you want to delete this record?')">
+
+                            <button>Delete</button>
+
+                        </a>
+
+                    </td>
+
+                </tr>
+
+                {% endfor %}
+
+            {% else %}
+
+                <tr>
+
+                    <td colspan="4">
+
+                        No records found.
+
+                    </td>
+
+                </tr>
+
+            {% endif %}
+
+        </tbody>
+
+    </table>
+
+    <br>
+
+    <a href="/dashboard">
+
+        <button>Back to Dashboard</button>
+
+    </a>
+
+</div>
+
+{% endblock %}

@@ -1,0 +1,66 @@
+{% extends "base.html" %}
+
+{% block title %}
+Dashboard
+{% endblock %}
+
+{% block content %}
+
+<div class="container">
+
+    <h1>Cloud Data Deduplication Dashboard</h1>
+
+    <hr>
+
+    <div class="dashboard-grid">
+
+        <!-- Total Records -->
+        <div class="card">
+            <h3>Total Records</h3>
+
+            <h1>{{ total_records }}</h1>
+
+        </div>
+
+        <!-- Unique Emails -->
+        <div class="card">
+            <h3>Unique Emails</h3>
+
+            <h1>{{ unique_emails }}</h1>
+
+        </div>
+
+        <!-- Last Record -->
+        <div class="card">
+
+            <h3>Last Record</h3>
+
+            {% if last_record %}
+
+                <p><strong>{{ last_record.name }}</strong></p>
+
+                <p>{{ last_record.email }}</p>
+
+            {% else %}
+
+                <p>No Records Available</p>
+
+            {% endif %}
+
+        </div>
+
+    </div>
+
+    <br>
+
+    <a href="/upload">
+        <button>Upload CSV</button>
+    </a>
+
+    <a href="/records">
+        <button>View Records</button>
+    </a>
+
+</div>
+
+{% endblock %}

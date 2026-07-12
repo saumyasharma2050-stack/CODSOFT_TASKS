@@ -1,0 +1,37 @@
+{% extends "base.html" %}
+
+{% block title %}
+Upload Result
+{% endblock %}
+
+{% block content %}
+
+<div class="container">
+
+    <h1>Upload Successful ✅</h1>
+
+    <hr>
+
+    <h2>Upload Summary</h2>
+
+    <p><strong>New Records Added:</strong> {{ added }}</p>
+
+    <p><strong>Duplicate Records Skipped:</strong> {{ skipped }}</p>
+
+    <br>
+
+    <a href="/upload">
+        <button>Upload Another CSV</button>
+    </a>
+
+    <a href="/records">
+        <button>View Records</button>
+    </a>
+
+    <a href="/dashboard">
+        <button>Dashboard</button>
+    </a>
+
+</div>
+
+{% endblock %}
