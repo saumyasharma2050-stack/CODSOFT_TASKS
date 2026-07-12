@@ -1,152 +1,96 @@
-# Cloud File Storage System
+# CODSOFT Cloud Computing Internship
 
-## Project Overview
-
-The **Cloud File Storage System** is a web application developed using **Python** and **Flask** that allows users to securely manage their files. The application provides features such as user registration, login, file upload, file download, file viewing, file deletion, and file type validation. User information is stored using **SQLite**, and the project is designed to be extended with cloud storage services such as **AWS S3**, **Azure Blob Storage**, or **Google Cloud Storage**.
+This repository contains the projects completed during my Cloud Computing Internship at CODSOFT.
 
 ---
 
-## Features
+## 👨‍💻 Developed By
 
-- User Registration
-- User Login & Logout
-- Upload Files
-- View Uploaded Files
-- Download Files
-- Delete Files
-- File Type Validation
-- SQLite Database Integration
-- Basic Access Permissions
-- Responsive Navigation Interface
+**Saumya Sharma**
+
+B.Tech Computer Science Engineering (Cloud Computing)
+
+Amity University Gurugram
 
 ---
 
-## Technologies Used
+# Tasks Completed
+
+## ✅ Task 1 – Cloud File Storage System
+
+### Description
+
+A Flask-based cloud file storage application that allows users to upload, download, view, and delete files securely.
+
+### Technologies Used
 
 - Python
 - Flask
-- Flask-SQLAlchemy
 - HTML
 - CSS
 - SQLite
+- SQLAlchemy
+
+### Features
+
+- Upload Files
+- Download Files
+- View Uploaded Files
+- Delete Files
+- Dashboard
+- Local Storage
+- AWS S3 Integration (Coming Soon)
 
 ---
 
-## Requirements
+## ✅ Task 2 – Cloud Data Deduplication System
 
-- Python 3.x
+### Description
+
+A Flask web application that detects duplicate records while uploading CSV files and stores only unique data.
+
+### Technologies Used
+
+- Python
 - Flask
-- Flask-SQLAlchemy
+- Pandas
+- SQLite
+- SQLAlchemy
+- HTML
+- CSS
 
-Install the required packages using:
+### Features
 
-```bash
-pip install -r requirements.txt
+- CSV Upload
+- Duplicate Detection
+- Data Validation
+- Dashboard
+- Search Records
+- Delete Records
+
+---
+
+## ⏳ Task 3
+
+Coming Soon...
+
+---
+
+## Repository Structure
+
+```
+CODSOFT_TASKS
+│
+├── Task1_Cloud_File_Storage_System
+│
+├── Task2_Cloud_Data_Deduplication_System
+│
+└── README.md
 ```
 
 ---
 
-## Project Structure
+Thank you for visiting my repository.
 
-```text
-CloudFileStorageSystem/
-│
-├── app.py
-├── config.py
-├── requirements.txt
-├── README.md
-├── .gitignore
-│
-├── database/
-│   └── app.db
-│
-├── uploads/
-│
-├── static/
-│   ├── css/
-│   │   └── style.css
-│   └── js/
-│       └── script.js
-│
-├── templates/
-│   ├── index.html
-│   ├── upload.html
-│   ├── files.html
-│   ├── login.html
-│   └── register.html
-│
-└── __pycache__/
-```
 
----
-
-## Installation
-
-### 1. Clone the repository
-
-```bash
-git clone <repository-url>
-```
-
-### 2. Navigate to the project folder
-
-```bash
-cd CloudFileStorageSystem
-```
-
-### 3. Install dependencies
-
-```bash
-pip install -r requirements.txt
-```
-
-### 4. Run the application
-
-```bash
-python app.py
-```
-
-### 5. Open the application
-
-Open your browser and visit:
-
-```text
-http://127.0.0.1:5000
-```
-
----
-
-## Current Functionality
-
-The application currently supports:
-
-- User Registration
-- User Login & Logout
-- File Upload
-- File Download
-- File Viewing
-- File Deletion
-- File Type Validation
-- SQLite Database for User Management
-- Session-Based Authentication
-- Basic Access Permissions
-
----
-
-## Future Improvements
-
-- Integrate AWS S3 for cloud file storage
-- Integrate Azure Blob Storage
-- Integrate Google Cloud Storage
-- Generate Shareable Download Links
-- Encrypt User Passwords
-- Improve User Interface and User Experience
-- Store file information in the database
-- Add user profile management
-
----
-
-## Author
-
-**Saumya Sharma**
 
