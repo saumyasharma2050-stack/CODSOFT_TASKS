@@ -8,10 +8,6 @@ This repository contains the projects completed during my Cloud Computing Intern
 
 **Saumya Sharma**
 
-B.Tech Computer Science Engineering (Cloud Computing)
-
-Amity University Gurugram
-
 ---
 
 # Tasks Completed
