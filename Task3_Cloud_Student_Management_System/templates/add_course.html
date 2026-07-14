@@ -1,0 +1,41 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+<h2 style="text-align:center;">Add Course</h2>
+
+<br>
+
+<form method="POST" style="max-width:500px;margin:auto;">
+
+    {{ form.hidden_tag() }}
+
+    <p>
+
+        {{ form.course_name.label }}
+
+        <br>
+
+        {{ form.course_name(style="width:100%;padding:10px;") }}
+
+    </p>
+
+    <br>
+
+    <p>
+
+        {{ form.course_code.label }}
+
+        <br>
+
+        {{ form.course_code(style="width:100%;padding:10px;") }}
+
+    </p>
+
+    <br>
+
+    {{ form.submit(class="btn") }}
+
+</form>
+
+{% endblock %}

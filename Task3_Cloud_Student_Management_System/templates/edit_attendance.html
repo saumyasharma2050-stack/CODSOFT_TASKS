@@ -1,0 +1,41 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+<h2 style="text-align:center;">Edit Attendance</h2>
+
+<br>
+
+<form method="POST" style="max-width:500px;margin:auto;">
+
+    {{ form.hidden_tag() }}
+
+    <p>
+
+        {{ form.student_id.label }}
+
+        <br>
+
+        {{ form.student_id(style="width:100%;padding:10px;") }}
+
+    </p>
+
+    <br>
+
+    <p>
+
+        {{ form.attendance_percentage.label }}
+
+        <br>
+
+        {{ form.attendance_percentage(style="width:100%;padding:10px;") }}
+
+    </p>
+
+    <br>
+
+    {{ form.submit(class="btn") }}
+
+</form>
+
+{% endblock %}

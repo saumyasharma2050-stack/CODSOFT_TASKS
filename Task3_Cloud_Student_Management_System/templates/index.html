@@ -1,0 +1,21 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+<h2>Welcome to CampusCloud Student Management System</h2>
+
+<p style="text-align:center; margin-top:20px;">
+
+This application helps manage student records, courses, attendance, and grades through a simple web interface.
+
+</p>
+
+<div style="text-align:center; margin-top:30px;">
+
+<a href="{{ url_for('dashboard') }}" class="btn">
+    Go to Dashboard
+</a>
+
+</div>
+
+{% endblock %}

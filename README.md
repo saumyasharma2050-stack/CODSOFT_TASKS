@@ -1,6 +1,6 @@
 # CODSOFT Cloud Computing Internship
 
-This repository contains the projects completed during my Cloud Computing Internship at CODSOFT.
+This repository contains the projects completed during my **Cloud Computing Internship at CODSOFT**.
 
 ---
 
@@ -66,27 +66,66 @@ A Flask web application that detects duplicate records while uploading CSV files
 
 ---
 
-## ⏳ Task 3
+## ✅ Task 3 – Student Management System
 
-Coming Soon...
+### Description
+
+A Flask-based web application for managing student information, courses, attendance, and grades through an easy-to-use dashboard.
+
+### Technologies Used
+
+- Python
+- Flask
+- Flask-WTF
+- Flask-SQLAlchemy
+- SQLite
+- HTML
+- CSS
+
+### Features
+
+- Dashboard
+- Student Management (Add, Edit, Delete, View)
+- Course Management
+- Attendance Management
+- Grade Management
+- Responsive User Interface
+- SQLite Database Integration
 
 ---
 
-## Repository Structure
+# Repository Structure
 
-```
+```text
 CODSOFT_TASKS
 │
 ├── Task1_Cloud_File_Storage_System
 │
 ├── Task2_Cloud_Data_Deduplication_System
 │
+├── Task3_Cloud_Student_Management_System
+│
+├── .gitignore
+│
 └── README.md
 ```
 
 ---
 
-Thank you for visiting my repository.
+# Skills Demonstrated
 
+- Cloud Application Development
+- Python Programming
+- Flask Web Development
+- Database Management using SQLite
+- CRUD Operations
+- File Handling
+- Data Validation
+- Responsive Web Design
+- Git & GitHub Version Control
 
+---
 
+## Thank You
+
+Thank you for visiting my repository. Your feedback and suggestions are always welcome.

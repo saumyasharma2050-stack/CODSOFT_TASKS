@@ -1,0 +1,44 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+<h2 style="text-align:center;">Add Student</h2>
+
+<br>
+
+<form method="POST" style="max-width:500px;margin:auto;">
+
+    {{ form.hidden_tag() }}
+
+    <p>
+        {{ form.name.label }}<br>
+        {{ form.name(style="width:100%;padding:10px;") }}
+    </p>
+
+    <p>
+        {{ form.roll_number.label }}<br>
+        {{ form.roll_number(style="width:100%;padding:10px;") }}
+    </p>
+
+    <p>
+        {{ form.email.label }}<br>
+        {{ form.email(style="width:100%;padding:10px;") }}
+    </p>
+
+    <p>
+        {{ form.course.label }}<br>
+        {{ form.course(style="width:100%;padding:10px;") }}
+    </p>
+
+    <p>
+        {{ form.semester.label }}<br>
+        {{ form.semester(style="width:100%;padding:10px;") }}
+    </p>
+
+    <br>
+
+    {{ form.submit(style="padding:10px 20px;background:#0d6efd;color:white;border:none;cursor:pointer;") }}
+
+</form>
+
+{% endblock %}

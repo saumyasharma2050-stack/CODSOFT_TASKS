@@ -1,0 +1,41 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+<h2 style="text-align:center;">Add Grade</h2>
+
+<br>
+
+<form method="POST" style="max-width:500px;margin:auto;">
+
+{{ form.hidden_tag() }}
+
+<p>
+{{ form.student_id.label }}
+<br>
+{{ form.student_id(style="width:100%;padding:10px;") }}
+</p>
+
+<br>
+
+<p>
+{{ form.subject.label }}
+<br>
+{{ form.subject(style="width:100%;padding:10px;") }}
+</p>
+
+<br>
+
+<p>
+{{ form.grade.label }}
+<br>
+{{ form.grade(style="width:100%;padding:10px;") }}
+</p>
+
+<br>
+
+{{ form.submit(class="btn") }}
+
+</form>
+
+{% endblock %}
